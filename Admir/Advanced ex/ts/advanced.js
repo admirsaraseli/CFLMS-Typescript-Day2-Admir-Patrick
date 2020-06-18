@@ -64,19 +64,19 @@ $(document).ready(function () {
             motor1 = new Motor("Harley Davidson", 2019, "Diesel", 300, 9, 2);
             var price = motor1.calculatePrice();
             document.getElementById("result").innerHTML = motor1.getData() +
-                ("<br><button onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
+                ("<br><button type=\"button\" class=\"btn btn-danger mt-3\" onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
         }
         if (this.value == 2) {
             motor2 = new Motor("Ducati", 2014, "Diesel", 700, 5, 2);
             var price = motor2.calculatePrice();
             document.getElementById("result").innerHTML = motor2.getData() +
-                ("<br><button onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
+                ("<br><button type=\"button\" class=\"btn btn-danger mt-3\" onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
         }
         if (this.value == 3) {
             motor3 = new Motor("Honda", 2017, "Diesel", 900, 7, 2);
             var price = motor3.calculatePrice();
             document.getElementById("result").innerHTML = motor3.getData() +
-                ("<br><button onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
+                ("<br><button type=\"button\" class=\"btn btn-danger mt-3\" onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
         }
     });
     $('#truck').on('click', function () {
@@ -84,19 +84,19 @@ $(document).ready(function () {
             truck1 = new Truck("Mercedes", 2020, "Diesel", 40000, 10, 3);
             var price = truck1.calculatePrice();
             document.getElementById("result").innerHTML = truck1.getData() +
-                ("<br><button onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
+                ("<br><button type=\"button\" class=\"btn btn-danger mt-3\" onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
         }
         if (this.value == 2) {
             truck2 = new Truck("Ford", 2019, "Diesel", 130000, 7, 2);
             var price = truck2.calculatePrice();
             document.getElementById("result").innerHTML = truck2.getData() +
-                ("<br><button onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
+                ("<br><button type=\"button\" class=\"btn btn-danger mt-3\" onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
         }
         if (this.value == 3) {
             truck3 = new Truck("Volkswagen", 2019, "Diesel", 70, 7, 2);
             var price = truck3.calculatePrice();
             document.getElementById("result").innerHTML = truck3.getData() +
-                ("<br><button onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
+                ("<br><button type=\"button\" class=\"btn btn-danger mt-3\" onclick=\"alert('" + price + " Euro')\">Calculate Price</button>");
         }
     });
 });
